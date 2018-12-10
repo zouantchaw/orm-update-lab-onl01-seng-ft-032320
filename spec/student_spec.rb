@@ -68,7 +68,7 @@ describe "Student" do
   end
 
   describe ".create" do
-    it 'creates a student object with name and grade attributes' do
+    it 'creates a student with two attributes, name and grade, and saves it into the students table.' do
       Student.create("Sally", "10th")
       expect(DB[:conn].execute("SELECT * FROM students")).to eq([[1, "Sally", "10th"]])
     end
