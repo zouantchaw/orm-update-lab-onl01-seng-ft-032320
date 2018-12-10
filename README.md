@@ -36,7 +36,7 @@ This instance method inserts a new row into the database using the attributes of
 
 ### The `.create` Method
 
-This method creates a student with two attributes, `name` and `grade`. 
+This method creates a student with two attributes, name and grade, and saves it into the students table.
 
 ### The `.new_from_db` Method
 
